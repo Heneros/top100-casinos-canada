@@ -1,0 +1,219 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+}
+body {
+    background-color: #fff;
+    color: #2e3246;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    margin: 0px auto;
+    padding: 0px;
+    overflow: hidden;
+}
+.container__items{
+    margin-top: 125px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.casinos__item{
+    border-radius: 5px;
+    padding: 10px 0;
+    margin: 0 15px 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 15%);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 900px;
+}
+.casinos__item:hover{
+    box-shadow: 0px 0px 35px 0px rgb(0 0 0 / 30%);
+}
+.logo__container{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    order: 1;
+    max-width: 150px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.item-first{
+    background-color: #e84393;
+    height: 42px;
+    width: 30px;
+    position: absolute;
+    top: -22px;
+    left: 30px;
+    border-radius: 5px;
+}
+.item-first span {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	padding: 7px 0;
+	text-align: center;
+	font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    color: #fff;
+}
+.item-first::before{
+    content: '';
+	display: block;
+	width: 30px;
+	height: 12px;
+	background-color: rgba(0, 0, 0, 0.1);
+	top: 0;
+	left: 0;
+	right: 0;
+	border-radius: 5px 5px 0 0;
+	z-index: 1;
+}
+
+
+.item-count {
+    background-color: #5c2698;
+    height: 42px;
+    width: 30px;
+    position: absolute;
+    top: -22px;
+    left: 30px;
+    border-radius: 5px;
+}
+.item-count span {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	padding: 7px 0;
+	text-align: center;
+	font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    color: #fff;
+}
+.item-count ::before{
+    content: '';
+	display: block;
+	width: 30px;
+	height: 12px;
+	background-color: rgba(0, 0, 0, 0.1);
+	top: 0;
+	left: 0;
+	right: 0;
+	border-radius: 5px 5px 0 0;
+	z-index: 1;
+}
+
+
+.container-description__casino{
+    order: 2;
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+}
+.description__casino{
+    padding: 0 15px;
+    font-weight: 400;
+    font-size: 0.95em;
+    line-height: 1.45em;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+.description__casino::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 67px;
+    left: 219px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-color: #d6d7db;
+}
+.container-rating{
+    order: 3;
+    display: flex;
+    align-items: center;
+}
+.box-rating{
+    height: 42px;
+    line-height: 20px;
+    width: 103px;
+    border-radius: 20px;
+    padding:11px 70px 11px 20px;
+    border: 1px solid #d6d7db;
+}
+.rating span{
+    position: relative;
+    left: 127px;
+    height: 1em;
+    bottom: 28px;
+    margin: auto 0;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    color: #111111;
+}
+.star{
+    color: #e84393;
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free' !important;
+    font-size: 1em;
+    font-style: normal;
+    line-height: 1em;
+    text-align: center;
+    text-decoration: inherit;
+    vertical-align: top;
+    width: 13px;
+    padding: 0 2px;
+}
+
+.star-full::before{
+    content: "\f005";
+    font-weight: 900;
+}
+.star-empty::before{
+    content: "\f005";
+    font-weight: 400;
+}
+.container-play{
+    order: 4;
+    display: flex;
+    align-items: center;
+}
+.box-button{
+   max-width: 190px;
+}
+.btn-play{
+    display: inline-block;
+    max-width: 180px;
+    padding: 10px 30px;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.25em;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px rgb(255 255 255 / 35%);
+    transition: all 0.5s ease-in-out;
+    color: #303952 ;
+    background-color: #c4e538 ;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
